@@ -10,6 +10,6 @@ import glassdoor_scraper as gs
 import pandas as pd
 path = "/Users/mcruzmbp2019/Documents/ds_salary_proj/chromedriver"
 
-df = gs.get_jobs('data scientist', 15, False, path, 15)
+df = gs.get_jobs('data analyst', 5, False, path, 10)
 
- 
+df.to_csv('glassdoor_jobs.csv', index = False)
